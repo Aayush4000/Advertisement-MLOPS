@@ -8,7 +8,7 @@ data ingestion:
 
 data validation:
   root_dir: artifacts/data_validation
-  data_dir: artifacts/data_ingestion/fabric_data
+  data_dir: artifacts/data_ingestion/advertising_data.csv
   STATUS_FILE: artifacts/data_validation/status.txt  # status of data validation 
 
 
@@ -49,4 +49,5 @@ model_evaluation:
   model_path: artifacts/model_trainer/final_model.joblib
   metric_file: artifacts/model_evaluation/metrics
   STATUS_FILE: artifacts/model_evaluation/status.txt
+
 
