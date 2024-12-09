@@ -104,17 +104,16 @@ class ConfigurationManager:
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
 
         config = self.config.model_evaluation
-        #params = self.params.ElasticNet
-
+        
         create_directories([config.root_dir])
+        
 
         model_evaluation_config = ModelEvaluationConfig(
             root_dir=config.root_dir,
             test_data_path=config.test_data_path,
             model_path=config.model_path,
             STATUS_FILE = config.STATUS_FILE
-            #target_column=schema.name,
-           # mlflow_uri="https://dagshub.com/Parthsarthi-lab/Wine-quality-End-to-end-Project.mlflow"
         )
 
         return model_evaluation_config
+    
